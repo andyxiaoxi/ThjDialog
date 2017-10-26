@@ -33,12 +33,14 @@ maven 依赖：
 	</dependency>
   
   
+  
+  
   How to use：
        example1:
-       
-        CustomDialog dialog = new CustomDialog(this);
+       ```
+       CustomDialog dialog = new CustomDialog(this);
         
-        dialog.show("提示","这是一条消息");
+       dialog.show("提示","这是一条消息");
 	
        example2:
        customDialog.show("提示", "提示消息", new CustomDialog.OnComfirmListener() {
@@ -48,8 +50,9 @@ maven 依赖：
                 customDialog.dismiss();
             }
         });
-	
+	```
 	example3:
+	```
 	customDialog.show("提示", "提示消息", new CustomDialog.OnComfirmListener() {
             @Override
             public void onClick(CustomDialog customDialog) {
@@ -63,3 +66,4 @@ maven 依赖：
                 customDialog.dismiss();
             }
         });
+	```
