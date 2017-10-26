@@ -18,21 +18,21 @@ gradle 依赖：
   
   
 maven 依赖：
-
+~~~
 	<repositories>
 		<repository>
 		    <id>jitpack.io</id>
 		    <url>https://www.jitpack.io</url>
 		</repository>
 	</repositories>
-  
+  ~~~
+  ~~~
  <dependency>
 	    <groupId>com.github.andyxiaoxi</groupId>
 	    <artifactId>ThjDialog</artifactId>
 	    <version>v1.0.0</version>
 	</dependency>
-  
-  
+  ~~~
   
   How to use：
   ~~~
