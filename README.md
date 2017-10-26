@@ -35,6 +35,7 @@ maven 依赖：
   
   
   How to use：
+  ~~~
        example1:
        CustomDialog dialog = new CustomDialog(this);
         
@@ -61,4 +62,4 @@ maven 依赖：
                 Log.i("test", "取消");
                 customDialog.dismiss();
             }
-
+~~~
