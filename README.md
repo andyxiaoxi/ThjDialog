@@ -34,7 +34,32 @@ maven 依赖：
   
   
   How to use：
-  
-        CustomDialog dialog = new CustomDialog(this);
+       example1:
+       
+        CustomDialog dialog = new CustomDialog(this);
         
         dialog.show("提示","这是一条消息");
+	
+       example2:
+       customDialog.show("提示", "提示消息", new CustomDialog.OnComfirmListener() {
+            @Override
+            public void onClick(CustomDialog customDialog) {
+                Log.i("test","确认");
+                customDialog.dismiss();
+            }
+        });
+	
+	example3:
+	customDialog.show("提示", "提示消息", new CustomDialog.OnComfirmListener() {
+            @Override
+            public void onClick(CustomDialog customDialog) {
+                Log.i("test", "确认");
+                customDialog.dismiss();
+            }
+        }, new CustomDialog.OnCancelListener() {
+            @Override
+            public void onClick(CustomDialog customDialog) {
+                Log.i("test", "取消");
+                customDialog.dismiss();
+            }
+        });
